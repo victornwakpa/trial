@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="theme-container" class="">
+    <div id="container" class="grid place-content-center">
+      <input type="text" class="mt-10" id="searchInput" placeholder="Search for cards...">
+      <select id="selectNumber">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="all">All</option>
+      </select>
+      <div id=" id="cardContainer"" class="grid-container grid gap-8 sm:grid-cols-2 my-20 grid-cols-4 xl:max-w-7xl">
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-2/3 box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Mercedez-benz</p>
+            <p class="subtitle text-base text-gray-800">E-class EQS</p>
+            <p class="description text-gray-600">Washington DC</p>
+            <p class="text-sm text-gray-600">Emeka Nwankwo</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Honda</p>
+            <p class="subtitle text-base text-gray-800">Civic</p>
+            <p class="description text-gray-600">South Carolina</p>
+            <p class="text-sm text-gray-600">Kitty Roscrigg</p>
+          </div>
+        </div>
+
+
+        <div class="grid-item flex flex-col rounded-lg overflow-hidden w-60 shadow-md border bg-white" v-for="car in cars" :key="car.id">
+          <div class="h-[60%] box-border">
+            <img
+              src="https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEzMjA3NH0" class="md:rounded-none object-cover h-48 w-full" />
+          </div>
+
+          <div class="flex flex-col p-4">
+            <p class="title font-medium text-xl">Buick</p>
+            <p class="subtitle text-base text-gray-800">Skylark</p>
+            <p class="description text-gray-600">Saint Petersburg</p>
+            <p class="text-sm text-gray-600">Silvan MacGorley</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
